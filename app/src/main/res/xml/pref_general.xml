@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<CheckBoxPreference
+        android:key="@string/admin_rights"
+        android:title="Admin Rights"
+        android:summaryOff="Allow the app to perform administrative tasks such as locking the device, changing password etc."
+        android:summaryOn="Remove admin rights to uninstall application"
+        android:defaultValue="true" />-->
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <SwitchPreference
+        android:key="key_wifi_lock"
+        android:title="Wifi Lock"
+        android:defaultValue="1"
+        android:selectAllOnFocus="true"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:summaryOn="Enabled"
+        android:summaryOff="Disabled"/>
+
+    <EditTextPreference
+        android:key="key_password"
+        android:title="Password"
+        android:defaultValue="7890"
+        android:selectAllOnFocus="true"
+        android:inputType="numberPassword"
+        android:singleLine="true"
+        android:maxLines="1"/>
+
+</PreferenceScreen>
